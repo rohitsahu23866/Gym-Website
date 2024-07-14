@@ -13,17 +13,7 @@ import WeightTracker from './components/WeightTracker';
 const App = () => {
   return (
     <Router>
-      <video
-        className="min-w-full min-h-full object-cover fixed z-0"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="/vid.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="flex flex-col min-h-screen relative z-10" >
+      <div className="bg-black flex flex-col min-h-screen relative z-10" >
       
         <Header />
         <main className="flex-grow p-4">

@@ -109,13 +109,13 @@ const Diet = () => {
   };
 
   return (
-    <div className="container mx-auto p-6 flex flex-col items-center">
-      <h1 className="text-4xl font-bold text-white mb-6">Diet Plans (Indian Cuisine)</h1>
-      <div className="w-full max-w-lg">
+    <div className="container  mx-auto p-6 flex flex-col items-center" id="Diet">
+      <h1 className="text-4xl font-bold secondary-color mb-6">Diet Plans</h1>
+      <div className="w-[60%] max-w-lg">
         {diets.map((diet, index) => (
-          <div key={index} className="bg-primary p-6 rounded-lg shadow-lg mb-4">
+          <div key={index} className=" bg-primary-color text-center p-6 rounded-lg shadow-lg mb-4">
             <button
-              className="text-2xl font-bold text-white cursor-pointer w-full text-left mb-4 focus:outline-none"
+              className="text-2xl font-bold text-gray-100 text-center  cursor-pointer w-full text-left mb-4 focus:outline-none"
               onClick={() => setActiveIndex(activeIndex === index ? null : index)}
             >
               {diet.title}
@@ -131,12 +131,7 @@ const Diet = () => {
                     </p>
                   </div>
                 ))}
-                <button
-                  className="bg-[#5A639C] text-white px-4 py-2 rounded-lg mt-2"
-                  onClick={() => handleDownloadPDF(diet.title, diet.meals)}
-                >
-                  Download PDF
-                </button>
+                
               </div>
             )}
           </div>

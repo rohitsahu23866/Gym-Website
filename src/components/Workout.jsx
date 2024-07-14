@@ -180,13 +180,13 @@ const Workout = () => {
   
 
   return (
-    <div className="container mx-auto p-6 flex flex-col items-center">
-      <h1 className="text-4xl font-bold text-white mb-6">Workout Splits</h1>
+    <div className="container mx-auto  p-6 flex flex-col items-center">
+      <h1 className="text-4xl font-bold text-primary-color mb-6">Workout Splits</h1>
       <div className="w-full max-w-lg">
         {workouts.map((workout, index) => (
-          <div key={index} className="bg-slate-800 p-6 rounded-lg shadow-lg mb-4">
+          <div key={index} className="bg-secondary-color p-6 rounded-lg shadow-lg mb-4">
             <button
-              className="text-2xl font-bold text-white cursor-pointer w-full text-left mb-4 focus:outline-none"
+              className="text-2xl font-bold text-white cursor-pointer w-full text-center mb-4 focus:outline-none"
               onClick={() => setActiveIndex(activeIndex === index ? null : index)}
             >
               {workout.title}
@@ -212,7 +212,7 @@ const Workout = () => {
                                     // Handle showing/hiding description if needed
                                   }}
                                 >
-                                  Info
+                                
                                 </button>
                               )}
                             </div>
@@ -227,12 +227,7 @@ const Workout = () => {
                     )}
                   </div>
                 ))}
-                <button
-                  className="bg-[#5A639C] text-white px-4 py-2 rounded-lg mt-2"
-                  onClick={() => handleDownloadPDF(workout.title, workout.days)}
-                >
-                  Download PDF
-                </button>
+                
               </div>
             )}
           </div>

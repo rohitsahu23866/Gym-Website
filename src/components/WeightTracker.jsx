@@ -33,7 +33,8 @@ const WeightTracker = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white py-10 px-5">
+    <div className="min-h-screen flex items-center justify-center">
+    <div className="bg-gradient-to-r from-orange-400 to-pink-600 opacity-90 py-10 px-5 rounded-lg">
       <h1 className="text-4xl font-bold mb-8 text-center">Weight Tracker</h1>
       <div className="max-w-md mx-auto">
         <div className="mb-6">
@@ -92,6 +93,7 @@ const WeightTracker = () => {
           </table>
         </div>
       </div>
+    </div>
     </div>
   );
 };
